@@ -1,4 +1,4 @@
-function IsMore14(dateString) {
+function ageIsMore14(dateString) {
     const date = new Date(dateString);
     const dif = Date.now() - date.getTime();
     const difDate = new Date(dif);
@@ -11,4 +11,4 @@ function IsMore14(dateString) {
     return false;
 }
 
-console.log(IsMore14('2010-02-26'));
+console.log(ageIsMore14('2010-02-26'));

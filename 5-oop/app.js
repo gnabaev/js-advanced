@@ -16,7 +16,7 @@ const Orc = function (name, race, language, weapon) {
 Orc.prototype = Object.create(Character.prototype);
 Orc.prototype.constructor = Orc;
 
-Orc.prototype.Hit = function (damage) {
+Orc.prototype.hit = function (damage) {
     console.log(damage);
 }
 
@@ -28,10 +28,10 @@ const Elf = function (name, race, language, spell) {
 Elf.prototype = Object.create(Character.prototype);
 Elf.prototype.constructor = Elf;
 
-Elf.prototype.CreateSpell = function (spell) {
+Elf.prototype.createSpell = function (spell) {
     console.log(spell);
 }
 
 const orc = new Orc('Name', 'Orc', 'RU', 'Sword');
 console.log(orc);
-orc.Hit(50);
+orc.hit(50);

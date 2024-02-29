@@ -8,7 +8,7 @@ const currentYear = new Date().getFullYear();
 
 const newYear = new Date(`1 Jan ${currentYear + 1} 00:00:00`);
 
-function Timer() {
+function timer() {
     const currentDate = Date.now();
     console.log(currentDate);
     const diff = newYear - currentDate;

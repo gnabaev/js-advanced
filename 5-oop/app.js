@@ -4,7 +4,7 @@ const Character = function (name, race, language) {
     this.language = language;
 }
 
-Character.prototype.Speak = function (speech) {
+Character.prototype.speak = function (speech) {
     console.log(speech);
 }
 
